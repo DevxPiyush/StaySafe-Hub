@@ -478,7 +478,7 @@ const LandingPage: React.FC = () => {
           </Box>
           <Box sx={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', mt: 4, pt: 4, textAlign: 'center' }}>
             <Typography variant="body2" sx={{ opacity: 0.6 }}>
-              © 2024 SafeStayHub. All rights reserved. | Privacy Policy | Terms of Service
+              © 2025 SafeStayHub. All rights reserved. | Privacy Policy | Terms of Service
             </Typography>
           </Box>
         </Container>
