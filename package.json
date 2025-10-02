@@ -1,8 +1,24 @@
 {
   "name": "safestayhub",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Safe, verified, and transparent accommodation and mess services for students and interns with women's safety priority",
+  "keywords": [
+    "student accommodation",
+    "PG",
+    "hostel",
+    "women safety",
+    "verified rooms",
+    "mess services"
+  ],
+  "author": "SafeStayHub Team",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.3",
+    "@mui/lab": "^7.0.0",
+    "@mui/material": "^7.3.3",
+    "@mui/system": "^7.3.3",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
@@ -11,8 +27,12 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "@types/react-router-dom": "^5.3.3",
+    "lucide-react": "^0.544.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.3",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"

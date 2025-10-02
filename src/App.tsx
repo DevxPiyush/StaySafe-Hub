@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
+import { theme } from './theme';
+
+// Import components (will create these next)
+import LandingPage from './pages/LandingPage';
+import AuthPage from './pages/AuthPage';
+import Dashboard from './pages/Dashboard';
+import SearchResults from './pages/SearchResults';
+import PropertyDetails from './pages/PropertyDetails';
+import BookingFlow from './pages/BookingFlow';
+import TenantPortal from './pages/TenantPortal';
+import ProfileSetup from './pages/ProfileSetup';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/auth" element={<AuthPage />} />
+            <Route path="/profile-setup" element={<ProfileSetup />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/search" element={<SearchResults />} />
+            <Route path="/property/:id" element={<PropertyDetails />} />
+            <Route path="/booking/:id" element={<BookingFlow />} />
+            <Route path="/tenant" element={<TenantPortal />} />
+          </Routes>
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 

@@ -44,8 +44,8 @@ SafeStayHub is a comprehensive web application designed to provide safe, verifie
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/safestayhub.git
-   cd safestayhub
+   git clone https://github.com/DevxPiyush/StaySafe-Hub
+   cd StaySafe-Hub
    ```
 
 2. **Install dependencies**
