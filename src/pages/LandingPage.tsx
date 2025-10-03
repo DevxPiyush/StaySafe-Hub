@@ -18,7 +18,6 @@ import {
   Shield,
   Home,
   Users,
-  Star,
   CheckCircle,
   Phone,
   MapPin,
@@ -187,22 +186,26 @@ const LandingPage: React.FC = () => {
               </Stack>
             </Box>
 
+            {/* Hero Image */}
             <Box>
               <Box
                 sx={{
                   position: 'relative',
-                  height: 400,
-                  background: 'rgba(255, 255, 255, 0.1)',
+                  height: { xs: 250, md: 400 },
                   borderRadius: 4,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  backdropFilter: 'blur(10px)',
+                  overflow: 'hidden',
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
                 }}
               >
-                <Typography variant="h6" sx={{ opacity: 0.7 }}>
-                  Hero Image / Video Preview
-                </Typography>
+                <img
+                  src="https://www.zillowstatic.com/bedrock/app/uploads/sites/16/2019/05/how-to-rent-out-your-house-e14146.png"
+                  alt="Hero Preview"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
               </Box>
             </Box>
           </Box>
@@ -298,7 +301,7 @@ const LandingPage: React.FC = () => {
         </Box>
       </Container>
 
-      {/* Onboarding Process */}
+      {/* Onboarding Section */}
       <Box sx={{ backgroundColor: theme.palette.background.default, py: 10 }}>
         <Container maxWidth="lg">
           <Box textAlign="center" mb={8}>
